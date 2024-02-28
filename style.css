@@ -26,18 +26,19 @@ section {
 .nav-bar-items {
   list-style: none;
   margin-right: 5em;
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: 900;
   color: #265900;
 }
-a:link,
-a:visited {
+.nav-link:link,
+.nav-link:visited {
   text-decoration: none;
   color: #265900;
 }
 .nav-bar-items:hover {
   cursor: pointer;
   font-weight: 900;
+  text-shadow: 1px 2px 2px rgb(3, 78, 21);
   color: #627752;
 }
 
@@ -117,7 +118,9 @@ a:visited {
   align-items: center;
   margin: 1em;
   padding: 1em;
+  width: 35em;
   background-color: rgb(245, 247, 244);
+  border: 2px solid #265900;
 }
 .project-title {
   margin: 1em 0.1em;
@@ -143,6 +146,24 @@ a:visited {
   height: 20em;
   cursor: pointer;
 }
+
+.footer-container {
+  margin-top: 5em;
+  /* background-color: rgb(232, 230, 227); */
+  display: flex;
+  justify-content: center;
+}
+.contact-link {
+  background-color: #265900;
+  color: rgb(228, 240, 234);
+  border-radius: 20px;
+  padding: 0.3em;
+  text-decoration: none;
+  box-shadow: 10px 5px 5px #3a4e2a;
+}
+.contact-link:hover {
+  text-shadow: 1px 2px 2px rgb(236, 243, 238);
+}
 @keyframes skillList {
   0% {
     transform: rotate(0deg);
@@ -161,8 +182,11 @@ a:visited {
   }
 }
 @media (max-width: 1024px) {
-  section {
-    margin-left: 0.5em;
+  .skill-section,
+  .intro-section {
+    padding: 2em;
+    margin: 1em;
+    border: 2px solid #265900;
   }
   .main-heading {
     margin-top: 1em;
@@ -173,10 +197,11 @@ a:visited {
   .nav-bar-items {
     margin-bottom: 1em;
   }
-  body {
+  body,
+  .main-body {
     background-image: url("./assets/book6.jpg");
   }
   .skill-list-item {
-    font-size: 4em;
+    font-size: 1em;
   }
 }
